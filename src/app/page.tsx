@@ -1,113 +1,173 @@
 import Image from "next/image";
+import Check from "./components/ui/check";
+import Link from "next/link";
+import AcordeonServicios from "./components/compound/acordeon";
+
+
 
 export default function Home() {
-  return (<h1>Hola</h1>
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    //   <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-    //     <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-    //       Get started by editing&nbsp;
-    //       <code className="font-mono font-bold">src/app/page.tsx</code>
-    //     </p>
-    //     <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-    //       <a
-    //         className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-    //         href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         By{" "}
-    //         <Image
-    //           src="/vercel.svg"
-    //           alt="Vercel Logo"
-    //           className="dark:invert"
-    //           width={100}
-    //           height={24}
-    //           priority
-    //         />
-    //       </a>
-    //     </div>
-    //   </div>
+  return (
+    <>
+      <section id="Bienvenida" className="backdrop-blur-sm bg-cover  bg-center bg-no-repeat flex flex-col gap-10 text-center justify-center mt-4 p-64 text-cyan-200 " style={{ backgroundImage: "url('/hexaImages.jpg')" }}>
+        <h1 className="flex text-9xl m-auto font-bold bg-cyan-900 bg-opacity-40 rounded-full"> HEXA </h1>
 
-    //   <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-    //     <Image
-    //       className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-    //       src="/next.svg"
-    //       alt="Next.js Logo"
-    //       width={180}
-    //       height={37}
-    //       priority
-    //     />
-    //   </div>
+        <h1 className="flex text-5xl m-auto font-semibold  bg-cyan-900 bg-opacity-40 rounded-full "> Ingeniería & Automatización </h1>
 
-    //   <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-    //     <a
-    //       href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className="mb-3 text-2xl font-semibold">
-    //         Docs{" "}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className="m-0 max-w-[30ch] text-sm opacity-50">
-    //         Find in-depth information about Next.js features and API.
-    //       </p>
-    //     </a>
+        <p className="flex justify-center  text-pretty text-3xl mt-10 mx-auto font-semibold  bg-cyan-900 bg-opacity-40 rounded-full">
+          ¡Tu socio estratégico en soluciones de automatización industrial de alto rendimiento!
+        </p>
+      </section>
 
-    //     <a
-    //       href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className="mb-3 text-2xl font-semibold">
-    //         Learn{" "}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className="m-0 max-w-[30ch] text-sm opacity-50">
-    //         Learn about Next.js in an interactive course with&nbsp;quizzes!
-    //       </p>
-    //     </a>
+      <section id="nosotros" className="flex flex-col justify-center mt-52 text-center">
+        <h1 className="text-5xl font-bold m-auto">Sobre nosotros</h1>
+        <p className="flex text-2xl font-semibold max-w-5xl justify-center m-auto mt-10">
+          Somos una empresa innovadora, especializada en la automatización y control industrial, ubicada en la ciudad de Neuquén Capital. Nos diferenciamos por nuestra tecnología de vanguardia y el compromiso inquebrantable con la satisfacción del cliente.        </p>
+        <div className="flex flex-col items-start justify-center text-3xl  font-thin m-10 md:flex-row gap-10">
 
-    //     <a
-    //       href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className="mb-3 text-2xl font-semibold">
-    //         Templates{" "}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className="m-0 max-w-[30ch] text-sm opacity-50">
-    //         Explore starter templates for Next.js.
-    //       </p>
-    //     </a>
+          <div className="flex flex-col justify-center  max-w-md text-center">
+            <Image
+              src="/Mision2.png"
+              alt="Mision empresarial"
+              width="150"
+              height="150"
+              className="m-auto"
+            />
+            <div>
+              <h1 className="text-4xl font-bold my-10">Misión</h1>
+            </div>
+            <p className="italic">
+              Proporcionar soluciones integrales de ingeniería, automatización y control industrial, siendo el aliado tecnológico preferido de nuestros clientes.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center max-w-md text-center">
+            <Image
+              src="/Vision2.png"
+              alt="Visión empresarial"
+              width="150"
+              height="150"
+              className="flex m-auto"
+            />
+            <div>
+              <h1 className="text-4xl font-bold my-10">Visión</h1>
+            </div>
+            <p className="italic">
+              Liderar el mercado como integradores de soluciones avanzadas en ingeniería, automatización y control industrial, expandiendo continuamente nuestras fronteras.
+            </p>
+          </div>
 
-    //     <a
-    //       href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className="mb-3 text-2xl font-semibold">
-    //         Deploy{" "}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-    //         Instantly deploy your Next.js site to a shareable URL with Vercel.
-    //       </p>
-    //     </a>
-    //   </div>
-    // </main>
+          <div className="flex flex-col justify-center max-w-md text-center">
+            <Image
+              src="/Valores2.png"
+              alt="Valores empresariales"
+              width="150"
+              height="150"
+              className="flex m-auto"
+            />
+            <div>
+              <h1 className="text-4xl font-bold my-10">
+                Valores
+              </h1>
+            </div>
+            <p className="italic">
+              Cumplimos con cada compromiso, impulsando el crecimiento profesional y el bienestar de nuestro equipo y del cliente.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="Servicios" className="flex flex-col justify-center mx-auto mt-52">
+        <div className="flex justify-center text-center">
+          <h1 className="flex flex-wrap text-5xl font-bold mx-auto">
+            Nuestros servicios
+          </h1>
+
+        </div>
+        <div className="flex justify-center mx-auto mt-10 font-semibold">
+
+          <AcordeonServicios />
+        </div>
+        <div className="flex flex-wrap gap-32 m-auto mt-20 justify-center ">
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-4xl ">Proyectos y Soluciones</h1>
+            <p className="text-2xl m-2">Soluciones llave en mano</p>
+          </div>
+
+          {/* <div>
+            <Check text="Actualización tecnológica de todo tipo de maquinaria (Software y Hardware)." />
+            <Check text="Automatización y control de Procesos." />
+            <Check text="Ingeniería integral: Diseño detallado en Instrumentación, Control y Electricidad para proyectos eficientes y seguros." />
+            <Check text="Precomisionado y Comisionado." />
+            <Check text="Medición y control de variables de procesos." />
+            <Check text="Sistemas de adquisición de datos y telemetría." />
+            <Check text="Configuración y Puesta en Servicio de Sistemas de Control, Scada / HMI." />
+            <Check text="Optimización de lógicas y depuración de errores." />
+            <Check text="Diseño y construcción de tableros de Control y Eléctricos (BT)." />
+            <Check text="Variadores de velocidad / Arrancadores Suaves." />
+
+
+
+          </div> */}
+          <div className="m-auto">
+            <Image
+              src="/Servicios1.png"
+              alt="Servicios a empresas"
+              width={250}
+              height={500}
+            />
+          </div>
+        </div>
+
+
+      </section>
+
+      <section id="Marcas" className="flex flex-col mt-52">
+        <div>
+          <h1 className="flex text-5xl justify-center font-bold mx-auto">Marcas con las que trabajamos</h1>
+        </div>
+        <div className="flex flex-wrap justify-center gap-32 mt-20 ">
+
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-4xl">Nuestras Aliadas</h1>
+            <p className="text-2xl m-2">Desarrollo e integración con marcas líderes</p>
+          </div>
+
+          <Image
+            src="/Marcas3-1.png"
+            alt="Marcas"
+            width={700}
+            height={600}
+          />
+
+        </div >
+      </section>
+
+      <section id="Contacto" className="mt-52 flex flex-col mb-10">
+        <h1 className="flex text-6xl font-bold m-auto mb-20"> Contacto</h1>
+
+        <div className="flex lg:flex-row flex-col gap-10">
+          <div className="flex flex-col justify-center items-center mx-auto">
+            <h1 className="text-5xl flex text-center justify-center mt-10">Datos de contacto</h1>
+            <p className="text-2xl mt-32">hexa@hexa-automation.com.ar</p>
+            <p className="text-2xl m-2 ">(+54) 0299 155748275</p>
+
+          </div>
+          <div className="m-auto border-opacity-600 border border-slate-500 w-full md:w-1/2 xl:w-1/4">
+            <form className="flex flex-col justify-center p-10 gap-2" >
+              <h1 className="text-3xl my-10">Formulario de contacto</h1>
+              <label htmlFor="nombre">Nombre y Apellido:</label>
+              <input type="text" id="nombre" className="border border-slate-400 border-opacity-50 shadow-md rounded-sm text-lg p-2 dark:shadow-slate-400" />
+              <label htmlFor="email">Correo electrónico</label>
+              <input type="email" id="email" className="border border-slate-400 border-opacity-50 shadow-md rounded-sm text-lg p-2 dark:shadow-slate-400" />
+              <label htmlFor="mensaje">Mensaje:</label>
+              <textarea id="mensaje" className="border border-slate-400 border-opacity-50 shadow-md rounded-sm text-lg p-2 dark:shadow-slate-400"></textarea>
+              <button className="bg-green-300 p-2 shadow-sm dark:shadow-slate-400 mx-auto my-10 max-w-52">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+    </>
   );
 }
