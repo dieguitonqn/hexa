@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Check from "./components/ui/check";
+
 import Link from "next/link";
 import AcordeonServicios from "./components/compound/acordeon";
 
@@ -84,7 +84,6 @@ export default function Home() {
 
         </div>
         <div className="flex justify-center mx-auto mt-10 font-semibold">
-
           <AcordeonServicios />
         </div>
         <div className="flex flex-wrap gap-32 m-auto mt-20 justify-center ">
