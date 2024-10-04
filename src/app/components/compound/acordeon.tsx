@@ -61,7 +61,7 @@ export default function AcordeonServicios() {
       <AccordionItem 
       key="3" 
       aria-label="Accordion 3" 
-      subtitle={<p className="dark:text-slate-400 text-xl" >Ingeniería de detalle en Instrumentación, Control y Electricidad para proyectos eficientes y seguros" </p>}
+      subtitle={<p className="dark:text-slate-400 text-xl" >Ingeniería de detalle en Instrumentación, Control y Electricidad para proyectos eficientes y seguros </p>}
       title={<p className="dark:text-slate-50 text-2xl">Ingeniería de detalle</p>}
       className="flex font-semibold justify-items-center shadow-md shadow-slate-50  p-5 mt-5">
         <div className=" w-1/2 justify-items-center justify-center mx-auto items-start mt-20 gap-5">
