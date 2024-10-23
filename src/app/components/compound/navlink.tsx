@@ -22,7 +22,7 @@ const Navlink: React.FC<NavlinkProps> = ({ href, sectionId, children }) => {
   return (
     <Link
       href={href}
-      className="text-white hover:text-gray-300 border border-transparent hover:border hover:border-cyan-500 p-5 transition-all duration-300 ease-in-out hover:before:absolute rounded-sm"
+      className=" hover:text-gray-500 border border-transparent hover:border hover:border-cyan-500 p-5 transition-all duration-300 ease-in-out hover:before:absolute rounded-sm"
       onClick={(e) => scrollToSection(e, sectionId)}
     >
       {children}

@@ -3,11 +3,51 @@ import Image from "next/image";
 import Link from "next/link";
 import AcordeonServicios from "./components/compound/acordeon";
 
+import FormContact from "./components/compound/formContact";
 
 
 export default function Home() {
   return (
     <>
+      <section className="relative bg-gray-900 text-white h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: `url('/hexaImages.jpg')` }} // Aquí agregas tu imagen de fondo
+      >
+        {/* Overlay para oscurecer la imagen */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        {/* Contenido */}
+
+        <div className="relative z-10 text-center">
+          <div className="flex flex-row items-center justify-center">
+            <Image
+              src="/hexa.png"
+              alt="logo"
+              width={100}
+              height={100}
+              className=""
+            ></Image>
+            <p className="text-6xl md:text-8xl ">Hexa Automation</p>
+          </div>
+
+
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 mt-6">
+            Liderando la Innovación en Soluciones Oil&Gas
+          </h1>
+          <p className="text-xl md:text-2xl mb-8">
+            Optimizamos la eficiencia operativa con las tecnologías de <br />
+            Rockwell y Yokogawa.
+          </p>
+          <div className="flex justify-center space-x-4">
+            <a href="#Contacto" className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-semibold">
+              Contáctanos
+            </a>
+            <a href="#Servicios" className="bg-transparent border border-white py-3 px-6 rounded-md font-semibold hover:bg-white hover:text-gray-900">
+              Explora nuestros Servicios
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* 
       <section id="Bienvenida" className="backdrop-blur-sm bg-cover  bg-center bg-no-repeat flex flex-col gap-10 text-center justify-center mt-4 p-64 text-cyan-200 " style={{ backgroundImage: "url('/hexaImages.jpg')" }}>
         <h1 className="flex text-9xl m-auto font-bold bg-cyan-900 bg-opacity-40 rounded-full"> HEXA </h1>
 
@@ -16,7 +56,7 @@ export default function Home() {
         <p className="flex justify-center  text-pretty text-3xl mt-10 mx-auto font-semibold  bg-cyan-900 bg-opacity-40 rounded-full">
           ¡Tu socio estratégico en soluciones de automatización industrial de alto rendimiento!
         </p>
-      </section>
+      </section> */}
 
       <section id="nosotros" className="flex flex-col justify-center mt-52 text-center">
         <h1 className="text-5xl font-bold m-auto">Sobre nosotros</h1>
@@ -152,16 +192,7 @@ export default function Home() {
 
           </div>
           <div className="m-auto border-opacity-600 border border-slate-500 w-full md:w-1/2 xl:w-1/4">
-            <form className="flex flex-col justify-center p-10 gap-2" >
-              <h1 className="text-3xl my-10">Formulario de contacto</h1>
-              <label htmlFor="nombre">Nombre y Apellido:</label>
-              <input type="text" id="nombre" className="border border-slate-400 border-opacity-50 shadow-md rounded-sm text-lg p-2 dark:shadow-slate-400" />
-              <label htmlFor="email">Correo electrónico</label>
-              <input type="email" id="email" className="border border-slate-400 border-opacity-50 shadow-md rounded-sm text-lg p-2 dark:shadow-slate-400" />
-              <label htmlFor="mensaje">Mensaje:</label>
-              <textarea id="mensaje" className="border border-slate-400 border-opacity-50 shadow-md rounded-sm text-lg p-2 dark:shadow-slate-400"></textarea>
-              <button className="bg-green-300 p-2 shadow-sm dark:shadow-slate-400 mx-auto my-10 max-w-52">Enviar</button>
-            </form>
+            <FormContact />
           </div>
         </div>
       </section>

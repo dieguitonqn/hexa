@@ -8,7 +8,7 @@ import Navlink from "./navlink"
 
 export default function Navbar() {
     return (
-        <nav className="sticky top-0 bg-gray-950 p-4 shadow-cyan-500 shadow-lg border-4 border-black border-b-cyan-500 z-10">
+        <nav className="sticky top-0 dark:bg-gray-950 bg-slate-300 p-4 shadow-cyan-500 shadow-lg border-4 border-black border-b-cyan-500 z-20">
             <div className="px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
