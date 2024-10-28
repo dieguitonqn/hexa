@@ -1,4 +1,4 @@
-import { CarouselServicios1, CarouselServicios2, CarouselServicios3 } from "../components/compound/CarouselServicios"
+import { CarouselServicios1, CarouselServicios2, CarouselServicios3 } from "../components/CarouselServicios"
 
 
 

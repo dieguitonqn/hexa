@@ -1,9 +1,10 @@
 import Image from "next/image";
 
 import Link from "next/link";
-import AcordeonServicios from "./components/compound/acordeon";
+import AcordeonServicios from "./components/acordeon";
 
-import FormContact from "./components/compound/formContact";
+import FormContact from "./components/formContact";
+import { autocomplete } from "@nextui-org/theme";
 
 
 export default function Home() {
@@ -20,13 +21,13 @@ export default function Home() {
         <div className="relative z-10 text-center">
           <div className="flex flex-row items-center justify-center">
             <Image
-              src="/hexa.png"
+              src="/hexa_blanco.png"
               alt="logo"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
               className=""
             ></Image>
-            <p className="text-6xl md:text-8xl ">Hexa Automation</p>
+
           </div>
 
 
@@ -37,9 +38,13 @@ export default function Home() {
             Optimizamos la eficiencia operativa con las tecnologías de <br />
             Rockwell y Yokogawa.
           </p>
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-row items-center justify-center">
+            
+          </div>
+
+          <div className="flex justify-center space-x-4 items-center">
             <a href="#Contacto" className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-semibold">
-              Contáctanos
+              Contactanos
             </a>
             <a href="#Servicios" className="bg-transparent border border-white py-3 px-6 rounded-md font-semibold hover:bg-white hover:text-gray-900">
               Explora nuestros Servicios
@@ -57,40 +62,45 @@ export default function Home() {
           ¡Tu socio estratégico en soluciones de automatización industrial de alto rendimiento!
         </p>
       </section> */}
-
-      <section id="nosotros" className="flex flex-col justify-center mt-52 text-center">
-        <h1 className="text-5xl font-bold m-auto">Sobre nosotros</h1>
-        <p className="flex text-2xl font-semibold max-w-5xl justify-center m-auto mt-10">
+      {/* <br />
+      <br />
+      <br /> */}
+      {/* <br />
+      <br /> */}
+      <div id="nosotros"/>
+      <section id="" className="flex flex-col justify-center mt-24 text-center">
+        <h1 className="text-4xl  md:text-5xl font-bold m-auto">Sobre nosotros</h1>
+        <p className="flex text-xl md:text-2xl font-semibold max-w-5xl justify-center m-auto mt-10">
           Somos una empresa innovadora, especializada en la automatización y control industrial, ubicada en la ciudad de Neuquén Capital. Nos diferenciamos por nuestra tecnología de vanguardia y el compromiso inquebrantable con la satisfacción del cliente.        </p>
-        <div className="flex flex-col items-start justify-center text-3xl  font-thin m-10 md:flex-row gap-10">
+        <div className="flex flex-wrap items-start justify-center text-3xl  font-thin m-10  gap-10">
 
           <div className="flex flex-col justify-center  max-w-md text-center">
             <Image
               src="/Mision2.png"
               alt="Mision empresarial"
-              width="150"
-              height="150"
+              width={100}
+              height={100}
               className="m-auto"
             />
             <div>
-              <h1 className="text-4xl font-bold my-10">Misión</h1>
+              <h1 className="text-3xl font-bold my-5">Misión</h1>
             </div>
-            <p className="italic">
+            <p className="italic text-lg sm:text-xl md:text-2xl">
               Proporcionar soluciones integrales de ingeniería, automatización y control industrial, siendo el aliado tecnológico preferido de nuestros clientes.
             </p>
           </div>
           <div className="flex flex-col justify-center max-w-md text-center">
             <Image
-              src="/Vision2.png"
+              src="/vision.webp"
               alt="Visión empresarial"
-              width="150"
-              height="150"
+              width="100"
+              height="100"
               className="flex m-auto"
             />
             <div>
-              <h1 className="text-4xl font-bold my-10">Visión</h1>
+              <h1 className="text-3xl font-bold my-5">Visión</h1>
             </div>
-            <p className="italic">
+            <p className="italic text-lg sm:text-xl md:text-2xl">
               Liderar el mercado como integradores de soluciones avanzadas en ingeniería, automatización y control industrial, expandiendo continuamente nuestras fronteras.
             </p>
           </div>
@@ -99,24 +109,24 @@ export default function Home() {
             <Image
               src="/Valores2.png"
               alt="Valores empresariales"
-              width="150"
-              height="150"
+              width="100"
+              height="100"
               className="flex m-auto"
             />
             <div>
-              <h1 className="text-4xl font-bold my-10">
+              <h1 className="text-3xl font-bold my-5">
                 Valores
               </h1>
             </div>
-            <p className="italic">
+            <p className="italic text-lg sm:text-xl md:text-2xl">
               Cumplimos con cada compromiso, impulsando el crecimiento profesional y el bienestar de nuestro equipo y del cliente.
             </p>
           </div>
 
         </div>
       </section>
-
-      <section id="Servicios" className="flex flex-col justify-center mx-auto mt-52">
+<div id="Servicios" />
+      <section id="" className="flex flex-col justify-center mx-auto mt-24">
         <div className="flex justify-center text-center">
           <h1 className="flex flex-wrap text-5xl font-bold mx-auto">
             Nuestros servicios
@@ -161,13 +171,13 @@ export default function Home() {
       </section>
 
       <section id="Marcas" className="flex flex-col mt-52">
-        <div>
+        {/* <div>
           <h1 className="flex text-5xl justify-center font-bold mx-auto">Marcas con las que trabajamos</h1>
-        </div>
+        </div> */}
         <div className="flex flex-wrap justify-center gap-32 mt-20 ">
 
           <div className="flex flex-col justify-center items-center">
-            <h1 className="text-4xl">Nuestras Aliadas</h1>
+            <h1 className="text-4xl">Nuestras Marcas Aliadas</h1>
             <p className="text-2xl m-2">Desarrollo e integración con marcas líderes</p>
           </div>
 

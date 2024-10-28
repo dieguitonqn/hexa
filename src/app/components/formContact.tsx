@@ -91,7 +91,7 @@ export default function FormContact() {
         required
       />
       <button
-        className="bg-green-300 p-2 shadow-sm dark:shadow-slate-400 mx-auto my-10 max-w-52"
+        className="bg-green-300 p-2 shadow-sm dark:shadow-slate-400 mx-auto mt-5 max-w-52"
         disabled={isLoading}
       >
         {isLoading ? 'Enviando...' : 'Enviar'}

@@ -20,13 +20,13 @@ const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>, sectionId: 
 
 const Navlink: React.FC<NavlinkProps> = ({ href, sectionId, children }) => {
   return (
-    <Link
+    <a
       href={href}
-      className=" hover:text-gray-500 border border-transparent hover:border hover:border-cyan-500 p-5 transition-all duration-300 ease-in-out hover:before:absolute rounded-sm"
+      className="text-white hover:font-semibold border border-transparent hover:border p-5 transition-all duration-300 ease-in-out hover:before:absolute rounded-sm"
       onClick={(e) => scrollToSection(e, sectionId)}
     >
       {children}
-    </Link>
+    </a>
   );
 };
 
