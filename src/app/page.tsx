@@ -76,10 +76,10 @@ export default function Home() {
 
           <div className="flex flex-col justify-center  max-w-md text-center">
             <Image
-              src="/Mision2.png"
+              src="/mision.webp"
               alt="Mision empresarial"
-              width={100}
-              height={100}
+              width={250}
+              height={250}
               className="m-auto"
             />
             <div>
@@ -93,8 +93,8 @@ export default function Home() {
             <Image
               src="/vision.webp"
               alt="Visión empresarial"
-              width="100"
-              height="100"
+              width="250"
+              height="250"
               className="flex m-auto"
             />
             <div>
@@ -107,10 +107,10 @@ export default function Home() {
 
           <div className="flex flex-col justify-center max-w-md text-center">
             <Image
-              src="/Valores2.png"
+              src="/valores.webp"
               alt="Valores empresariales"
-              width="100"
-              height="100"
+              width="250"
+              height="250"
               className="flex m-auto"
             />
             <div>
