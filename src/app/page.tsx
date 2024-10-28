@@ -39,7 +39,7 @@ export default function Home() {
             Rockwell y Yokogawa.
           </p>
           <div className="flex flex-row items-center justify-center">
-            
+
           </div>
 
           <div className="flex justify-center space-x-4 items-center">
@@ -67,7 +67,7 @@ export default function Home() {
       <br /> */}
       {/* <br />
       <br /> */}
-      <div id="nosotros"/>
+      <div id="nosotros" />
       <section id="" className="flex flex-col justify-center mt-24 text-center">
         <h1 className="text-4xl  md:text-5xl font-bold m-auto">Sobre nosotros</h1>
         <p className="flex text-xl md:text-2xl font-semibold max-w-5xl justify-center m-auto mt-10">
@@ -125,7 +125,7 @@ export default function Home() {
 
         </div>
       </section>
-<div id="Servicios" />
+      <div id="Servicios" />
       <section id="" className="flex flex-col justify-center mx-auto mt-24">
         <div className="flex justify-center text-center">
           <h1 className="flex flex-wrap text-5xl font-bold mx-auto">
