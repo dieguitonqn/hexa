@@ -73,6 +73,14 @@ export default function Navbar() {
                             </li>
                             <li>
                                 <Link
+                                    href="/#clientes"
+                                    className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out hover:before:absolute rounded-sm"
+                                    >
+                                    Clientes
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
                                     href="/#Contacto"
                                     // sectionId="Contacto">
                                     className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out hover:before:absolute rounded-sm"  

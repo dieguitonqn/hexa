@@ -5,6 +5,7 @@ import AcordeonServicios from "./components/acordeon";
 
 import FormContact from "./components/formContact";
 import { autocomplete } from "@nextui-org/theme";
+import { CarouselClientes } from "./components/carouselClientes";
 
 
 export default function Home() {
@@ -52,21 +53,22 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* 
-      <section id="Bienvenida" className="backdrop-blur-sm bg-cover  bg-center bg-no-repeat flex flex-col gap-10 text-center justify-center mt-4 p-64 text-cyan-200 " style={{ backgroundImage: "url('/hexaImages.jpg')" }}>
-        <h1 className="flex text-9xl m-auto font-bold bg-cyan-900 bg-opacity-40 rounded-full"> HEXA </h1>
 
-        <h1 className="flex text-5xl m-auto font-semibold  bg-cyan-900 bg-opacity-40 rounded-full "> Ingeniería & Automatización </h1>
+      <section>
+        <div className="flex w-1/2 m-auto mt-10">
+          <Image 
+          src="/certificados.jpeg"
+          alt="certificados de integración"
+          width={800}
+          height={200}
+          className="w-full"
+          
 
-        <p className="flex justify-center  text-pretty text-3xl mt-10 mx-auto font-semibold  bg-cyan-900 bg-opacity-40 rounded-full">
-          ¡Tu socio estratégico en soluciones de automatización industrial de alto rendimiento!
-        </p>
-      </section> */}
-      {/* <br />
-      <br />
-      <br /> */}
-      {/* <br />
-      <br /> */}
+          />
+        </div>
+      </section>
+
+
       <div id="nosotros" />
       <section id="" className="flex flex-col justify-center mt-24 text-center">
         <h1 className="text-4xl  md:text-5xl font-bold m-auto">Sobre nosotros</h1>
@@ -190,6 +192,23 @@ export default function Home() {
 
         </div >
       </section>
+
+      <section id="clientes" className="flex flex-col mt-52">
+       
+        <div className="flex flex-col justify-center gap-32 mt-20 ">
+
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-4xl">Nuestros clientes</h1>
+          </div>
+          
+          <div className="flex justify-center mx-auto mt-10">
+            <CarouselClientes />
+          </div>
+
+
+        </div >
+      </section>
+
 
       <section id="Contacto" className="mt-52 flex flex-col mb-10">
 
