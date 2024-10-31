@@ -26,7 +26,7 @@ export default function Home() {
               width={300}
               height={300}
               className=""
-            ></Image>
+            />
 
           </div>
 
@@ -89,7 +89,7 @@ export default function Home() {
               Proporcionar soluciones integrales de ingeniería, automatización y control industrial, siendo el aliado tecnológico preferido de nuestros clientes.
             </p>
           </div>
-          <div className="flex flex-col justify-center max-w-md text-center">
+          <div className="flex flex-col justify-center https://res.cloudinary.com/demo/image/upload/max-w-md text-center">
             <Image
               src="/vision.webp"
               alt="Visión empresarial"
@@ -192,7 +192,6 @@ export default function Home() {
       </section>
 
       <section id="Contacto" className="mt-52 flex flex-col mb-10">
-        <h1 className="flex text-6xl font-bold m-auto mb-20"> Contacto</h1>
 
         <div className="flex lg:flex-row flex-col gap-10">
           <div className="flex flex-col justify-center items-center mx-auto">

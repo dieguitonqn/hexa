@@ -8,7 +8,7 @@ import Navlink from "./navlink"
 
 export default function Navbar() {
     return (
-        <nav className="sticky top-0 dark:bg-gray-950 bg-slate-300 p-4  border-black  z-20">
+        <nav className="sticky top-0 bg-gray-950 p-4  border-black  z-20">
             <div className="px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
@@ -17,7 +17,7 @@ export default function Navbar() {
                             href="/"
                             >
                             <Image
-                            className='mx-4'
+                            // className='mx-4'
                             src="/hexa_blanco.png"
                             alt='Hexa logo'
                             width={100}
