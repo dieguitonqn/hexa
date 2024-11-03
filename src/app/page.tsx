@@ -6,6 +6,7 @@ import AcordeonServicios from "./components/acordeon";
 import FormContact from "./components/formContact";
 import { autocomplete } from "@nextui-org/theme";
 import { CarouselClientes } from "./components/carouselClientes";
+import { ServiceCard } from "./components/CardServicios";
 
 
 export default function Home() {
@@ -56,13 +57,13 @@ export default function Home() {
 
       <section>
         <div className="flex w-1/2 m-auto mt-10">
-          <Image 
-          src="/certificados.jpeg"
-          alt="certificados de integración"
-          width={800}
-          height={200}
-          className="w-full"
-          
+          <Image
+            src="/certificados.jpeg"
+            alt="certificados de integración"
+            width={800}
+            height={200}
+            className="w-full"
+
 
           />
         </div>
@@ -128,45 +129,68 @@ export default function Home() {
         </div>
       </section>
       <div id="Servicios" />
-      <section id="" className="flex flex-col justify-center mx-auto mt-24">
+      <section id="" className="flex flex-col justify-center mx-auto mt-24 max-w-6xl">
         <div className="flex justify-center text-center">
-          <h1 className="flex flex-wrap text-5xl font-bold mx-auto">
+          <h1 className="flex flex-wrap text-4xl font-semibold mx-auto">
             Nuestros servicios
           </h1>
 
         </div>
-        <div className="flex justify-center mx-auto mt-10 font-semibold">
+        {/* <div className="flex justify-center mx-auto mt-10 font-semibold">
           <AcordeonServicios />
+        </div> */}
+        <div className="flex flex-wrap justify-center gap-14 mx-auto mt-5">
+          <ServiceCard
+            title="Automatización Industrial y Control de Procesos"
+            items={[
+              "Automatización y control de Procesos",
+              "Medición y control de variables de procesos",
+              "Sistemas de adquisición de datos y telemetría",
+              "Configuración y Puesta en Servicio de Sistemas de Control, SCADA / HMI"
+            ]}
+            backgroundImage="/bk-card-auto.webp"
+          />
+          <ServiceCard
+            title="Ingeniería y Diseño"
+            items={[
+              "Ingeniería básica y de detalle: Instrumentación, Control y Electricidad",
+              "Diseño y construcción de tableros de Control y Eléctricos (BT)",
+              "Variadores de velocidad / Arrancadores Suaves"
+            ]}
+            backgroundImage="/bk-card-ing.webp"
+
+          />
+          <ServiceCard
+            title="Mantenimiento y Actualización"
+            items={[
+              "Actualización tecnológica de todo tipo de maquinaria (Software y Hardware)",
+              "Optimización de lógicas y depuración de errores",
+              "Precomisionado y Comisionado"  
+            ]}
+            backgroundImage="/bk-card-mant.webp"
+          />
         </div>
-        <div className="flex flex-wrap gap-32 m-auto mt-20 justify-center ">
+        <div className="flex flex-wrap gap-32 m-auto mt-10 justify-center ">
           <div className="flex flex-col justify-center items-center">
-            <h1 className="text-4xl ">Proyectos y Soluciones</h1>
-            <p className="text-2xl m-2">Soluciones llave en mano</p>
+            <h1 className="text-4xl ">Proyectos y Soluciones Llave en mano</h1>
+            <p className="text-lg m-2"> En Hexa, ofrecemos soluciones llave en mano para todos nuestros proyectos, garantizando un proceso integral que cubre desde la planificación hasta la entrega final, adaptándonos a las necesidades específicas de cada cliente.</p>
+            <Image
+            src={"/llave_mano.jpeg"}
+            alt="Llave en mano"
+            width={400}
+            height={300}
+            />
           </div>
 
-          {/* <div>
-            <Check text="Actualización tecnológica de todo tipo de maquinaria (Software y Hardware)." />
-            <Check text="Automatización y control de Procesos." />
-            <Check text="Ingeniería integral: Diseño detallado en Instrumentación, Control y Electricidad para proyectos eficientes y seguros." />
-            <Check text="Precomisionado y Comisionado." />
-            <Check text="Medición y control de variables de procesos." />
-            <Check text="Sistemas de adquisición de datos y telemetría." />
-            <Check text="Configuración y Puesta en Servicio de Sistemas de Control, Scada / HMI." />
-            <Check text="Optimización de lógicas y depuración de errores." />
-            <Check text="Diseño y construcción de tableros de Control y Eléctricos (BT)." />
-            <Check text="Variadores de velocidad / Arrancadores Suaves." />
-
-
-
-          </div> */}
-          <div className="m-auto">
+ 
+           {/* <div className="m-auto">
             <Image
               src="/Servicios1.png"
               alt="Servicios a empresas"
               width={250}
               height={500}
             />
-          </div>
+          </div> */}
         </div>
 
 
@@ -194,14 +218,14 @@ export default function Home() {
       </section>
 
       <section id="clientes" className="flex flex-col mt-52">
-       
+
         <div className="flex flex-col justify-center gap-32 mt-20 ">
 
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-4xl">Nuestros clientes</h1>
           </div>
-          
-          <div className="flex justify-center mx-auto mt-10">
+
+          <div className=" justify-center w-full  m-auto mt-10">
             <CarouselClientes />
           </div>
 
