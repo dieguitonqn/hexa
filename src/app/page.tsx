@@ -37,8 +37,8 @@ export default function Home() {
             Liderando la Innovación en Soluciones Oil&Gas
           </h1>
           <p className="text-xl md:text-2xl mb-8">
-            Optimizamos la eficiencia operativa con las tecnologías de <br />
-            Rockwell y Yokogawa.
+          Optimizamos la eficiencia operativa aplicando tecnologías de vanguardia <br />
+            
           </p>
           <div className="flex flex-row items-center justify-center">
 
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="flex w-1/2 m-auto mt-10">
+        <div className="flex w-3/4 m-auto mt-10">
           <Image
             src="/certificados.jpeg"
             alt="certificados de integración"
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </section>
       <div id="Servicios" />
-      <section id="" className="flex flex-col justify-center mx-auto mt-24 max-w-6xl">
+      <section id="" className="flex flex-col justify-center mx-auto mt-24 max-w-8xl">
         <div className="flex justify-center text-center">
           <h1 className="flex flex-wrap text-4xl font-semibold mx-auto">
             Nuestros servicios
@@ -139,7 +139,7 @@ export default function Home() {
         {/* <div className="flex justify-center mx-auto mt-10 font-semibold">
           <AcordeonServicios />
         </div> */}
-        <div className="flex flex-wrap justify-center gap-14 mx-auto mt-5">
+        <div className="flex flex-wrap justify-center gap-10 mx-auto mt-5">
           <ServiceCard
             title="Automatización Industrial y Control de Procesos"
             items={[
@@ -147,6 +147,16 @@ export default function Home() {
               "Medición y control de variables de procesos",
               "Sistemas de adquisición de datos y telemetría",
               "Configuración y Puesta en Servicio de Sistemas de Control, SCADA / HMI"
+            ]}
+            backgroundImage="/bk-card-auto.webp"
+          />
+          <ServiceCard
+            title="Obras de Instrumentación y Electricidad"
+            items={[
+              "Desarrollo de proyectos de instrumentación",
+              "Proyectos eléctricos de instalaciones y procesos industriales",
+              "Instrumentación de plantas de tratamiento y O&G en general",
+              "Instalaciones de campo"
             ]}
             backgroundImage="/bk-card-auto.webp"
           />
@@ -170,7 +180,7 @@ export default function Home() {
             backgroundImage="/bk-card-mant.webp"
           />
         </div>
-        <div className="flex flex-wrap gap-32 m-auto mt-10 justify-center ">
+        <div className="flex flex-wrap gap-32 m-auto mt-10 justify-center max-w-6xl">
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-4xl ">Proyectos y Soluciones Llave en mano</h1>
             <p className="text-lg m-2"> En Hexa, ofrecemos soluciones llave en mano para todos nuestros proyectos, garantizando un proceso integral que cubre desde la planificación hasta la entrega final, adaptándonos a las necesidades específicas de cada cliente.</p>
