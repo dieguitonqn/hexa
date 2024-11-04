@@ -191,7 +191,7 @@ export default function Home() {
       <section id="Marcas" className="flex flex-wrap  p-10">
 
         
-        <div className="flex flex-wrap justify-center mt-20 items-center gap-10">
+        <div className="flex flex-wrap justify-between gap-10 mt-20 items-center ">
 
           <div className="flex flex-col justify-text-center text-center mx-auto items-center mb-5 max-w-lg">
             <h1 className="text-2xl md:text-4xl font-semibold">Nuestras Marcas Aliadas</h1>
@@ -201,7 +201,7 @@ export default function Home() {
             <Image
               src="/marcas2.png"
               alt="Marcas"
-              width={800}
+              width={950}
               height={584}
             />
 
