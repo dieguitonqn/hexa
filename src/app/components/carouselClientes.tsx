@@ -7,7 +7,7 @@ import AutoScroll from 'embla-carousel-auto-scroll'
 import Image from 'next/image'
 
 export function CarouselClientes() {
-    const [emblaRef] = useEmblaCarousel({ loop: true,  }, [AutoScroll({playOnInit:true,speed: 1 })])
+    const [emblaRef] = useEmblaCarousel({ loop: true,  }, [AutoScroll({playOnInit:true,speed: 1, stopOnInteraction:false, startDelay: 0 })])
 
     return (
         <div className=' overflow-hidden'>
@@ -16,7 +16,7 @@ export function CarouselClientes() {
             <div className="embla__container max-w-xs items-center">
                 <div className="embla__slide ">
                     <Image
-                        src="/clientes/chevron.jpg"
+                        src="/clientes/chevron.png"
                         alt=''
                         width={150}
                         height={150}
@@ -25,7 +25,7 @@ export function CarouselClientes() {
                 </div>
                 <div className="embla__slide ">
                     <Image
-                        src="/clientes/calfrac.jpeg"
+                        src="/clientes/calfrac.png"
                         alt=''
                         width={150}
                         height={150}
@@ -52,7 +52,7 @@ export function CarouselClientes() {
                 </div>
                 <div className="embla__slide ">
                     <Image
-                        src="/clientes/sanantonio.jpeg"
+                        src="/clientes/sanantonio.png"
                         alt=''
                         width={150}
                         height={150}

@@ -1,15 +1,16 @@
-'use client'
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa"; // Librería react-icons para el ícono del menú
+import { Hambuuguesa } from "./hamburguesa";
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    // const toggleMenu = () => {
+    //     setIsOpen(!isOpen);
+    // };
 
     return (
         <nav className="sticky top-0 bg-gray-950 p-4 border-black z-20">
@@ -38,15 +39,16 @@ export default function Navbar() {
                             <li><Link href="/#Contacto" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Contacto</Link></li>
                         </ul>
                     </div>
+                    <Hambuuguesa />
                     {/* Botón de menú móvil */}
-                    <div className="md:hidden flex items-center">
+                    {/* <div className="md:hidden flex items-center">
                         <button onClick={toggleMenu} className="text-white focus:outline-none">
                             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 {/* Menú desplegable para móviles */}
-                {isOpen && (
+                {/* {isOpen && (
                     <div className="md:hidden mt-4">
                         <ul className="flex flex-col space-y-2">
                             <li><Link href="/#nosotros" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Nosotros</Link></li>
@@ -58,7 +60,7 @@ export default function Navbar() {
                             <li><Link href="/#Contacto" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Contacto</Link></li>
                         </ul>
                     </div>
-                )}
+                )} */}
             </div>
         </nav>
     );

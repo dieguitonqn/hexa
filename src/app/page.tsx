@@ -37,8 +37,8 @@ export default function Home() {
             Liderando la Innovación en Soluciones Oil&Gas
           </h1>
           <p className="text-xl md:text-2xl mb-8">
-          Optimizamos la eficiencia operativa aplicando tecnologías de vanguardia <br />
-            
+            Optimizamos la eficiencia operativa aplicando tecnologías de vanguardia <br />
+
           </p>
           <div className="flex flex-row items-center justify-center">
 
@@ -57,15 +57,7 @@ export default function Home() {
 
       <section>
         <div className="flex w-3/4 m-auto mt-10">
-          <Image
-            src="/certificados.jpeg"
-            alt="certificados de integración"
-            width={800}
-            height={200}
-            className="w-full"
 
-
-          />
         </div>
       </section>
 
@@ -129,7 +121,7 @@ export default function Home() {
         </div>
       </section>
       <div id="Servicios" />
-      <section id="" className="flex flex-col justify-center mx-auto mt-24 max-w-8xl">
+      <section id="" className="flex flex-col justify-center mx-auto mt-24 max-w-8xl bg-neutral-100 shadow-lg  shadow-neutral-200 px-5 py-10">
         <div className="flex justify-center text-center">
           <h1 className="flex flex-wrap text-4xl font-semibold mx-auto">
             Nuestros servicios
@@ -175,7 +167,7 @@ export default function Home() {
             items={[
               "Actualización tecnológica de todo tipo de maquinaria (Software y Hardware)",
               "Optimización de lógicas y depuración de errores",
-              "Precomisionado y Comisionado"  
+              "Precomisionado y Comisionado"
             ]}
             backgroundImage="/bk-card-mant.webp"
           />
@@ -185,49 +177,40 @@ export default function Home() {
             <h1 className="text-4xl ">Proyectos y Soluciones Llave en mano</h1>
             <p className="text-lg m-2"> En Hexa, ofrecemos soluciones llave en mano para todos nuestros proyectos, garantizando un proceso integral que cubre desde la planificación hasta la entrega final, adaptándonos a las necesidades específicas de cada cliente.</p>
             <Image
-            src={"/llave_mano.jpeg"}
-            alt="Llave en mano"
-            width={400}
-            height={300}
+              src={"/llave_mano.png"}
+              alt="Llave en mano"
+              width={300}
+              height={300}
             />
           </div>
-
- 
-           {/* <div className="m-auto">
-            <Image
-              src="/Servicios1.png"
-              alt="Servicios a empresas"
-              width={250}
-              height={500}
-            />
-          </div> */}
         </div>
 
 
       </section>
 
-      <section id="Marcas" className="flex flex-col mt-52">
-        {/* <div>
-          <h1 className="flex text-5xl justify-center font-bold mx-auto">Marcas con las que trabajamos</h1>
-        </div> */}
-        <div className="flex flex-wrap justify-center gap-32 mt-20 ">
+      <section id="Marcas" className="flex flex-wrap  p-10">
 
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-4xl">Nuestras Marcas Aliadas</h1>
-            <p className="text-2xl m-2">Desarrollo e integración con marcas líderes</p>
+        
+        <div className="flex flex-wrap justify-center mt-20 items-center gap-10">
+
+          <div className="flex flex-col justify-text-center text-center mx-auto items-center mb-5 max-w-lg">
+            <h1 className="text-2xl md:text-4xl font-semibold">Nuestras Marcas Aliadas</h1>
+            <p className=" text-lg md:text-2xl m-2">Somos integradores autorizados y desarrollamos proyectos con todas las marcas líderes del mercado</p>
           </div>
+          <div className="">
+            <Image
+              src="/marcas2.png"
+              alt="Marcas"
+              width={800}
+              height={584}
+            />
 
-          <Image
-            src="/Marcas3-1.png"
-            alt="Marcas"
-            width={700}
-            height={600}
-          />
+          </div>
 
         </div >
       </section>
 
-      <section id="clientes" className="flex flex-col mt-52">
+      <section id="clientes" className="flex flex-col mt-52 bg-neutral-100 shadow-lg  shadow-neutral-200 p-20">
 
         <div className="flex flex-col justify-center gap-32 mt-20 ">
 
@@ -244,7 +227,7 @@ export default function Home() {
       </section>
 
 
-      <section id="Contacto" className="mt-52 flex flex-col mb-10">
+      <section id="Contacto" className="mt-32 flex flex-col mb-10">
 
         <div className="flex lg:flex-row flex-col gap-10">
           <div className="flex flex-col justify-center items-center mx-auto">
@@ -253,7 +236,7 @@ export default function Home() {
             <p className="text-2xl m-2 ">(+54) 0299 155748275</p>
 
           </div>
-          <div className="m-auto border-opacity-600 border border-slate-500 w-full md:w-1/2 xl:w-1/4">
+          <div className="m-auto border-opacity-600  w-full md:w-1/2 xl:w-1/4">
             <FormContact />
           </div>
         </div>
