@@ -16,7 +16,7 @@ const successCases: SuccessCase[] = [
     {
         title: "Planta Compresora Tratayén",
         description: "Sistema de Control, Seguridad y Visualización SCADA para la Planta Compresora Tratayén, en la provincia de Neuquén. La planta, propiedad de Enarsa, construida por SACDE y operada por TGS, cuenta con una capacidad de producción de 5 millones de metros cúbicos por día (5MM m³/día) que se incorporarán al Gasoducto Presidente Néstor Kirchner (GPNK). El sistema SCADA integra tecnología de control, seguridad y visualización de Yokogawa, desarrollado en su totalidad por Hexa Automation.",
-        imageUrl: "/FotosHexa/hexa-foto-13.jpeg",
+        imageUrl: "/FotosHexa/hexa-foto-12.jpeg",
         
     },
     {
