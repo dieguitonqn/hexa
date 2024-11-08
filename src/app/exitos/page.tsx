@@ -41,7 +41,7 @@ const successCases: SuccessCase[] = [
     {
         title:"Sistema Contra Incendios, Bajo del Choique",
         description:"Obra de Instrumentación en Planta Bajo del Choique, propiedad de Exxon Mobile. Este proyecto incluye el tendido de cables de instrumentación y potencia, sistemas de puesta a tierra (PAT), montaje de instrumentos, construcción y montaje de cajas de conexionado. Además, abarca las etapas de comisionado y Pruebas de Equipos y Materiales (PEM), con la instrumentación y control a cargo de Hexa Automation y construcción a cargo de Fricsa SA.",
-        imageUrl:"/FotosHexa/hexa-foto-4.jpeg"
+        imageUrl:"/FotosHexa/exxon.jpeg"
     }
     // Agrega más casos de éxito según sea necesario
 ];
