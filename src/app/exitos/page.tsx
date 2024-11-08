@@ -28,13 +28,13 @@ const successCases: SuccessCase[] = [
     },
     {
         title: "Planta Compresora Salliqueló",
-        description: "Sistema de Control, Seguridad y Visualización SCADA para la Planta Compresora Salliqueló, en la provincia de Neuquén. Este proyecto, perteneciente a YPF y TGS, fue construido por Fricsa SA, con instrumentación y control a cargo de Hexa Automatio. Utiliza tecnología de control, seguridad y visualización SCADA de Yokogawa.",
+        description: "Sistema de Control, Seguridad y Visualización SCADA para la Planta Compresora Salliqueló, en la provincia de Neuquén. Este proyecto, perteneciente a YPF y TGS, fue construido por Contreras, con instrumentación y control a cargo de Hexa Automatio. Utiliza tecnología de control, seguridad y visualización SCADA de Yokogawa.",
         imageUrl: "/PC_Salliquelo.webp",
         
     },
     {
         title: "Ampliación EMED Tratayén Fase II",
-        description: "Obra de ampliación del sistema de Instrumentación y Control Yokogawa para el nuevo filtro y cuadro de regulación en la Estación de Medición Tratayén, propiedad de YPF y operada por TGS. La instrumentación y control están a cargo de Hexa Automation.",
+        description: "Obra de ampliación del sistema de Instrumentación y Control Yokogawa para el nuevo filtro y cuadro de regulación en la Estación de Medición Tratayén, propiedad de YPF y operada por TGS, fue construido por FricSA. La instrumentación y control están a cargo de Hexa Automation.",
         imageUrl:"/FotosHexa/hexa-foto-3.jpeg"
         
     },
