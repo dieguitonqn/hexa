@@ -15,7 +15,7 @@ interface SuccessCase {
 const successCases: SuccessCase[] = [
     {
         title: "Planta Compresora Tratayén",
-        description: "Sistema de Control, Seguridad y Visualización SCADA para la Planta Compresora Tratayén, en la provincia de Neuquén. La planta, propiedad de Enarsa, construida por    SACDE y operada por TGS, cuenta con una capacidad de producción de 5 millones de metros cúbicos por día (5MM m³/día) que se incorporarán al Gasoducto Presidente Néstor Kirchner (GPNK). El sistema SCADA integra tecnología de control, seguridad y visualización de Yokogawa, desarrollado en colaboración con los integradores Yokogawa y Hexa Automation.",
+        description: "Sistema de Control, Seguridad y Visualización SCADA para la Planta Compresora Tratayén, en la provincia de Neuquén. La planta, propiedad de Enarsa, construida por SACDE y operada por TGS, cuenta con una capacidad de producción de 5 millones de metros cúbicos por día (5MM m³/día) que se incorporarán al Gasoducto Presidente Néstor Kirchner (GPNK). El sistema SCADA integra tecnología de control, seguridad y visualización de Yokogawa, desarrollado en su totalidad por Hexa Automation.",
         imageUrl: "/FotosHexa/hexa-foto-13.jpeg",
         
     },
@@ -28,19 +28,19 @@ const successCases: SuccessCase[] = [
     },
     {
         title: "Planta Compresora Salliqueló",
-        description: "Sistema de Control, Seguridad y Visualización SCADA para la Planta Compresora Salliqueló, en la provincia de Neuquén. Este proyecto, perteneciente a YPF y TGS, fue construido por Contreras, con instrumentación y control a cargo de Hexa Automatio. Utiliza tecnología de control, seguridad y visualización SCADA de Yokogawa.",
+        description: "Sistema de Control, Seguridad y Visualización SCADA para la Planta Compresora Salliqueló, en la provincia de Buenos Aires. Este proyecto, perteneciente a Enarsa y operado por TGS, fue construido por Contreras, con todo el sistema de control, seguridad y visualización Scada a cargo de Yokogawa, integrado en su totalidad por Hexa Automation.",
         imageUrl: "/PC_Salliquelo.webp",
         
     },
     {
         title: "Ampliación EMED Tratayén Fase II",
-        description: "Obra de ampliación del sistema de Instrumentación y Control Yokogawa para el nuevo filtro y cuadro de regulación en la Estación de Medición Tratayén, propiedad de YPF y operada por TGS, fue construido por FricSA. La instrumentación y control están a cargo de Hexa Automation.",
+        description: "Obra de ampliación del sistema de Instrumentación y Control para el nuevo filtro y cuadro de regulación en la Estación de Medición Tratayén, propiedad de YPF y operada por TGS, construído por Fricsa SA, con toda la instrumentación y control están a cargo de Hexa Automation.",
         imageUrl:"/FotosHexa/hexa-foto-3.jpeg"
         
     },
     {
         title:"Sistema Contra Incendios, Bajo del Choique",
-        description:"Obra de Instrumentación en Planta Bajo del Choique, propiedad de Exxon Mobile. Este proyecto incluye el tendido de cables de instrumentación y potencia, sistemas de puesta a tierra (PAT), montaje de instrumentos, construcción y montaje de cajas de conexionado. Además, abarca las etapas de comisionado y Pruebas de Equipos y Materiales (PEM), con la instrumentación y control a cargo de Hexa Automatio.",
+        description:"Obra de Instrumentación en Planta Bajo del Choique, propiedad de Exxon Mobile. Este proyecto incluye el tendido de cables de instrumentación y potencia, sistemas de puesta a tierra (PAT), montaje de instrumentos, construcción y montaje de cajas de conexionado. Además, abarca las etapas de comisionado y Pruebas de Equipos y Materiales (PEM), con la instrumentación y control a cargo de Hexa Automation y construcción a cargo de Fricsa SA.",
         imageUrl:"/FotosHexa/hexa-foto-4.jpeg"
     }
     // Agrega más casos de éxito según sea necesario
