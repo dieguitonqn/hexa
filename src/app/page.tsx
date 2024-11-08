@@ -63,7 +63,7 @@ export default function Home() {
 
 
       <div id="nosotros" />
-      <section id="" className="flex flex-col justify-center mt-24 text-center">
+      <section id="" className="flex flex-col justify-center mt-28 text-center">
         <h1 className="text-4xl  md:text-5xl font-bold m-auto">Sobre nosotros</h1>
         <p className="flex text-xl md:text-2xl font-semibold max-w-5xl justify-center m-auto mt-10">
           Somos una empresa innovadora, especializada en la automatización y control industrial, ubicada en la ciudad de Neuquén Capital. Nos diferenciamos por nuestra tecnología de vanguardia y el compromiso inquebrantable con la satisfacción del cliente.        </p>
