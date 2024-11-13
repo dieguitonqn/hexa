@@ -28,6 +28,7 @@ const toggleMenu = () => {
                         <li><Link href="/#Marcas" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Nuestras Marcas</Link></li>
                         <li><Link href="/galeria" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Galería</Link></li>
                         <li><Link href="/exitos" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Casos de éxito</Link></li>
+                        <li><Link href="/novedades" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Novedades</Link></li>
                         <li><Link href="/#clientes" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Clientes</Link></li>
                         <li><Link href="/#Contacto" className="text-white hover:font-semibold p-2 transition-all duration-300 ease-in-out rounded-sm">Contacto</Link></li>
                     </ul>
