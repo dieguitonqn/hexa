@@ -10,7 +10,9 @@ const Footer = () => {
 
             </div>
             <div className="mt-4 bg-slate-700 mx-auto text-center p-2">
-                <p className="text-xs flex flex-row justify-center items-center gap-2">
+                <a className="text-xs flex flex-row justify-center items-center gap-2"
+                href="https://diarmodev.com"
+                target="_blank">
                     Hecho por DiarmoDev
                     <Image
                         src="/diarmodev_logo2.jpg"
@@ -18,7 +20,7 @@ const Footer = () => {
                         width={20}
                         height={20}>
                     </Image>
-                </p>
+                </a>
             </div>
         </footer>
     )
