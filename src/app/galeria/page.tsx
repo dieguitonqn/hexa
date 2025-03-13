@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image';
+
 import { useState } from 'react';
 
 interface ImageData {
@@ -44,7 +44,7 @@ export default function ImageGallery() {
       <div className="flex flex-wrap gap-5 mt-5">
         {images.map((image, index) => (
           <div key={index} className="cursor-pointer " onClick={() => handleImageClick(image)}>
-            <Image
+            <img
               src={image.src}
               alt={image.alt}
               width={300}

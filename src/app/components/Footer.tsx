@@ -14,12 +14,12 @@ const Footer = () => {
                 href="https://diarmodev.com"
                 target="_blank">
                     Hecho por DiarmoDev
-                    <Image
+                    <img
                         src="/diarmodev_logo2.jpg"
                         alt="logo diarmodev"
                         width={20}
                         height={20}>
-                    </Image>
+                    </img>
                 </a>
             </div>
         </footer>

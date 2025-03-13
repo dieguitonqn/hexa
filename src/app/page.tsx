@@ -1,10 +1,4 @@
-import Image from "next/image";
-
-import Link from "next/link";
-import AcordeonServicios from "./components/acordeon";
-
 import FormContact from "./components/formContact";
-import { autocomplete } from "@nextui-org/theme";
 import { CarouselClientes } from "./components/carouselClientes";
 import { ServiceCard } from "./components/CardServicios";
 
@@ -22,7 +16,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center">
           <div className="flex flex-row items-center justify-center">
-            <Image
+            <img
               src="/hexa_blanco.png"
               alt="logo"
               width={300}
@@ -70,7 +64,7 @@ export default function Home() {
         <div className="flex flex-wrap items-start justify-center text-3xl  font-thin m-10  gap-10">
 
           <div className="flex flex-col justify-center  max-w-md text-center">
-            <Image
+            <img
               src="/mision.webp"
               alt="Mision empresarial"
               width={250}
@@ -85,7 +79,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col justify-center max-w-md text-center">
-            <Image
+            <img
               src="/vision.webp"
               alt="Visión empresarial"
               width="250"
@@ -101,7 +95,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center max-w-md text-center">
-            <Image
+            <img
               src="/valores.webp"
               alt="Valores empresariales"
               width="250"
@@ -176,7 +170,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-4xl ">Proyectos y Soluciones Llave en mano</h1>
             <p className="text-lg m-2"> En Hexa, ofrecemos soluciones llave en mano para todos nuestros proyectos, garantizando un proceso integral que cubre desde la planificación hasta la entrega final, adaptándonos a las necesidades específicas de cada cliente.</p>
-            <Image
+            <img
               src={"/llave_mano.png"}
               alt="Llave en mano"
               width={300}
@@ -197,8 +191,8 @@ export default function Home() {
             <h1 className="text-2xl md:text-4xl font-semibold">Nuestras Marcas Aliadas</h1>
             <p className=" text-lg md:text-2xl m-2">Somos integradores autorizados y desarrollamos proyectos con todas las marcas líderes del mercado</p>
           </div>
-          <div className="">
-            <Image
+          <div className="mx-auto">
+            <img
               src="/marcas2.png"
               alt="Marcas"
               width={950}

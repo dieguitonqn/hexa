@@ -12,7 +12,7 @@ export default function Novedad({fecha,titulo,texto,foto}:novedad) {
     return (
         <>
             <div className="  flex flex-row mt-10 pb-10 border-b-1">
-                <Image
+                <img
                     src={foto}
                     alt={titulo}
                     width={200}

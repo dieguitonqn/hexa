@@ -12,40 +12,40 @@ export function CarouselServicios1() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide ">
-          <Image
+          <img
             src="/servicios1.jpeg"
             alt='Servicios1'
             width={600}
             height={600}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios2.jpeg"
             alt='Servicios2'
             width={600}
             height={600}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios3.jpeg"
             alt='Servicios3'
             width={600}
             height={600}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios4.jpeg"
             alt='Servicios4'
             width={600}
             height={600}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
       </div>
     </div>
@@ -59,40 +59,40 @@ export function CarouselServicios2() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios2-1.jpeg"
             alt='Servicios2-1'
             width={600}
             height={600}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios2-2.jpeg"
             alt='Servicios2-2'
             width={600}
             height={600}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios2-3.jpeg"
             alt='Servicios2-3'
             width={600}
             height={600}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios2-4.jpeg"
             alt='Servicios2-4'
             width={400}
             height={400}
             className='m-auto'>
-          </Image>
+          </img>
         </div>
       </div>
     </div>
@@ -107,30 +107,30 @@ export function CarouselServicios3() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide">
-          <Image
+          <img
             src="/servicios3-1.jpeg"
             alt='Servicios3-1'
             width={600}
             height={600}>
-          </Image></div>
-        <div className="embla__slide"> <Image
+          </img></div>
+        <div className="embla__slide"> <img
           src="/servicios3-2.jpeg"
           alt='Servicios3-2'
           width={600}
           height={600}>
-        </Image></div>
-        <div className="embla__slide"> <Image
+        </img></div>
+        <div className="embla__slide"> <img
           src="/servicios3-3.jpeg"
           alt='Servicios3-3'
           width={600}
           height={600}>
-        </Image></div>
-        <div className="embla__slide"> <Image
+        </img></div>
+        <div className="embla__slide"> <img
           src="/servicios3-4.jpeg"
           alt='Servicios3-4'
           width={600}
           height={400}>
-        </Image></div>
+        </img></div>
       </div>
     </div>
   )

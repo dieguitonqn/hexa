@@ -59,7 +59,7 @@ const SuccessCasesSection: React.FC = () => {
                     {successCases.map((caseItem, index) => (
                         <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
 
-                            <Image
+                            <img
                                 src={caseItem.imageUrl}
                                 alt={caseItem.title}
                                 width={500}

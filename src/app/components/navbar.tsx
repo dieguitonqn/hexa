@@ -1,8 +1,7 @@
 
-import { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { FaBars, FaTimes } from "react-icons/fa"; // Librería react-icons para el ícono del menú
+
 import { Hambuuguesa } from "./hamburguesa";
 
 export default function Navbar() {
@@ -13,7 +12,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="flex items-center">
                         <Link href="/">
-                            <Image
+                            <img
                                 src="/hexa_blanco.png"
                                 alt="Hexa logo"
                                 width={100}
@@ -29,7 +28,7 @@ export default function Navbar() {
                             <li><Link href="/#Marcas" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Nuestras Marcas</Link></li>
                             <li><Link href="/galeria" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Galería</Link></li>
                             <li><Link href="/exitos" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Casos de éxito</Link></li>
-                            <li><Link href="/novedades" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Novedades</Link></li>
+                            {/* <li><Link href="/novedades" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Novedades</Link></li> */}
                             <li><Link href="/#clientes" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Clientes</Link></li>
                             <li><Link href="/#Contacto" className="text-white hover:font-semibold p-5 transition-all duration-300 ease-in-out rounded-sm">Contacto</Link></li>
                         </ul>

@@ -1,4 +1,3 @@
-
 'use client'
 
 import useEmblaCarousel from 'embla-carousel-react'
@@ -15,68 +14,68 @@ export function CarouselClientes() {
         <div className="embla w-fit" ref={emblaRef}>
             <div className="embla__container max-w-xs items-center">
                 <div className="embla__slide ">
-                    <Image
+                    <img
                         src="/clientes/chevron.png"
                         alt=''
                         width={150}
                         height={150}
                         className='m-auto'>
-                    </Image>
+                    </img>
                 </div>
                 <div className="embla__slide ">
-                    <Image
+                    <img
                         src="/clientes/calfrac.png"
                         alt=''
                         width={150}
                         height={150}
                         className='m-auto'>
-                    </Image>
+                    </img>
                 </div>
                 <div className="embla__slide ">
-                    <Image
+                    <img
                         src="/clientes/FRICSA.png"
                         alt=''
                         width={150}
                         height={150}
                         className='m-auto'>
-                    </Image>
+                    </img>
                 </div>
                 <div className="embla__slide ">
-                    <Image
+                    <img
                         src="/clientes/oldelval.png"
                         alt=''
                         width={150}
                         height={150}
                         className='m-auto'>
-                    </Image>
+                    </img>
                 </div>
                 <div className="embla__slide ">
-                    <Image
+                    <img
                         src="/clientes/sanantonio.png"
                         alt=''
                         width={150}
                         height={150}
                         className='m-auto'>
-                    </Image>
+                    </img>
                 </div>
                 <div className="embla__slide ">
-                    <Image
+                    <img
                         src="/clientes/ypf.png"
                         alt=''
                         width={150}
                         height={150}
                         className='m-auto'>
-                    </Image>
+                    </img>
                 </div>
 
                 <div className="embla__slide ">
-                    <Image
+                    <img
                         src="/clientes/weatherford.png"
                         alt=''
                         width={150}
                         height={150}
                         className='m-auto'>
-                    </Image>
+                    </img>
                 </div>
             </div>
         </div>

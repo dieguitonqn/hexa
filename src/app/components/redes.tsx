@@ -12,7 +12,7 @@ export default function Redes(){
                         className="flex flex-row">
                         <p className="items-center text-xl">Instagram</p>
 
-                        <Image
+                        <img
                             src={"/instagram.svg"}
                             alt="instagram"
                             width={30}
@@ -28,7 +28,7 @@ export default function Redes(){
                         className="flex flex-row">
                         <p className="items-center text-xl">Facebook</p>
 
-                        <Image
+                        <img
                             src={"/facebook.svg"}
                             alt="instagram"
                             width={30}
@@ -44,7 +44,7 @@ export default function Redes(){
                         className="flex flex-row">
                         <p className="items-center text-xl">X (Tweeter)</p>
 
-                        <Image
+                        <img
                             src={"/xicon.webp"}
                             alt="instagram"
                             width={30}
@@ -60,7 +60,7 @@ export default function Redes(){
                         className="flex flex-row">
                         <p className="items-center text-xl">LinkedIn</p>
 
-                        <Image
+                        <img
                             src={"/linkedin.svg"}
                             alt="instagram"
                             width={30}

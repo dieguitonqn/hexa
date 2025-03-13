@@ -1,8 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import Novedad from "../components/Novedad";
-import { div } from "framer-motion/client";
 import Redes from "../components/redes";
 
 
