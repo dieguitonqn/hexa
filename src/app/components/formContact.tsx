@@ -26,7 +26,6 @@ export default function FormContact() {
 
   const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setTextArea(e.target.value);
-
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -34,30 +33,35 @@ export default function FormContact() {
 
     // Validate form data (optional)
     setIsLoading(true); // Mostrar indicador de carga
-    const bodyCOntent=JSON.stringify({...formData, mensaje:textArea})
-    console.log(bodyCOntent);
-    try {
-      const res = await fetch('/api/sendmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ ...formData, mensaje: textArea }),
-      });
+    const form = e.currentTarget;
+    form.submit();
+    // const bodyContent = JSON.stringify({ ...formData, mensaje: textArea });
+    // console.log(bodyContent);
+    // try {
+    //   const res = await fetch('sendmail.php', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ ...formData, mensaje: textArea }),
+    //   });
 
-      if (res.status === 200) {
-        setStatus('Correo enviado exitosamente');
-      } else {
-        setStatus('Error al enviar el correo');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      setStatus('Error al enviar el correo');
-    }
+    //   if (res.status === 200) {
+    //     setStatus('Correo enviado exitosamente');
+    //   } else {
+    //     setStatus('Error al enviar el correo');
+    //   }
+    // } catch (error) {
+    //   console.error('Error:', error);
+    //   setStatus('Error al enviar el correo');
+    // } finally {
+    //   setIsLoading(false); // Ocultar indicador de carga
+    // }
   };
 
   return (
-    <form className="flex flex-col justify-center p-10 gap-2" onSubmit={handleSubmit}>
+    // <form className="flex flex-col justify-center p-10 gap-2" onSubmit={handleSubmit}>
+    <form className="flex flex-col justify-center p-10 gap-2" action="sendmail.php" method="POST"> 
       <h1 className="text-3xl my-10">Formulario de contacto</h1>
       <label htmlFor="nombre">Nombre y Apellido:</label>
       <input
@@ -84,6 +88,7 @@ export default function FormContact() {
       <label htmlFor="mensaje">Mensaje:</label>
       <textarea
         id="mensaje"
+        name="mensaje"
         className="border border-slate-400 border-opacity-50 shadow-md rounded-sm text-lg p-2 text-black dark:shadow-slate-400"
         placeholder="Dejenos su mensaje aquí..."
         value={textArea}
@@ -93,10 +98,16 @@ export default function FormContact() {
       <button
         className="bg-green-300 py-2 px-4 rounded-sm shadow-sm dark:shadow-slate-400 mx-auto mt-5 max-w-52"
         disabled={isLoading}
+        type="submit"
+        onClick={(e)=>{
+          handleSubmit;
+        }}
       >
         {isLoading ? 'Enviando...' : 'Enviar'}
       </button>
-      <p className="text-center">{status}</p>
+      <p className="text-center">
+        {status}
+      </p>
     </form>
   );
 }

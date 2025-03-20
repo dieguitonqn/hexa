@@ -40,15 +40,7 @@ export function CarouselClientes() {
                         className='m-auto'>
                     </img>
                 </div>
-                <div className="embla__slide ">
-                    <img
-                        src="/clientes/oldelval.png"
-                        alt=''
-                        width={150}
-                        height={150}
-                        className='m-auto'>
-                    </img>
-                </div>
+ 
                 <div className="embla__slide ">
                     <img
                         src="/clientes/sanantonio.png"
